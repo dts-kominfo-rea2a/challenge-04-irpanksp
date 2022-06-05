@@ -19,7 +19,9 @@ const createDate = (dataArray, index) => {
       .sort()
       .join("-");
   } else {
-      return Date.parse(dataArray[index])/1000;
+      let hasil = Date.parse(dataArray[index])/1000;
+      hasilToString = hasil.toString();
+      return hasilToString;
   }
 }
 
